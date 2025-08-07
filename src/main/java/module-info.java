@@ -4,5 +4,8 @@ module com.example.chainclothingproject {
 
 
     opens com.example.chainclothingproject to javafx.fxml;
+//    opens com.example.chainclothingproject.Seller to javafx.fxml;
+//    opens com.example.chainclothingproject.ReturnAgent to javafx.fxml;
+
     exports com.example.chainclothingproject;
 }

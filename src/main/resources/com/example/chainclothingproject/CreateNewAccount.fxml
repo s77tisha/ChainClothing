@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="616.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.CreateNewAccountController">
+   <children>
+      <Label layoutX="263.0" layoutY="14.0" />
+      <Label layoutX="176.0" layoutY="23.0" text="ChainRetailSys" textFill="#3c1966">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="92.0" prefHeight="35.0" prefWidth="248.0" style="+: cornflowerblue;" text="Create a new account">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fullnametextbox" layoutX="210.0" layoutY="127.0" promptText="Full Name" />
+      <DatePicker fx:id="dateofbirthdatepicker" layoutX="212.0" layoutY="226.0" />
+      <Label layoutX="210.0" layoutY="202.0" text="Date of birth ?" />
+      <Label layoutX="210.0" layoutY="259.0" text="Gender?" />
+      <RadioButton fx:id="maleradiobutton" layoutX="208.0" layoutY="277.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="femaleradiobutton" layoutX="270.0" layoutY="277.0" mnemonicParsing="false" text="Female" />
+      <TextField fx:id="emailaddresstextbox" layoutX="210.0" layoutY="343.0" promptText="Email address" />
+      <PasswordField fx:id="setpasswordpassfield" layoutX="211.0" layoutY="381.0" promptText="Set password" />
+      <ComboBox fx:id="choosearolecombobox" layoutX="210.0" layoutY="432.0" prefWidth="150.0" promptText="Choose a role" style="-fx-background-color: white; -fx-border-color: silver;" />
+      <Button layoutX="213.0" layoutY="490.0" mnemonicParsing="false" onAction="#signuptocreatenewaccountOnActionbutton" prefHeight="35.0" prefWidth="143.0" style="-fx-background-color: limegreen;" text="Sign Up" textFill="#fffcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="211.0" layoutY="546.0" text="Already have an account?" />
+      <Button layoutX="213.0" layoutY="564.0" mnemonicParsing="false" onAction="#signInifalreadyhaveAnaccountOnActionbutton" prefHeight="35.0" prefWidth="143.0" style="-fx-background-color: cornflowerblue;" text="Sign in" textFill="#fffcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="phonenumbertextbox1" layoutX="210.0" layoutY="308.0" promptText="Phone Number" />
+      <TextField fx:id="EnterIDtextbox" layoutX="210.0" layoutY="168.0" promptText="Enter ID" />
+   </children>
+</AnchorPane>
