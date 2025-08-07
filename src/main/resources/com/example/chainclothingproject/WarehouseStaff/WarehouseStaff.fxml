@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="WarehouseBoarderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.WarehouseStaff.WarehouseStaffController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <left>
+        <VBox prefHeight="490.0" prefWidth="187.0" style="-fx-background-color: lightpink;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#PendingPackagingOnAction" text="Pending Packaging">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#PackedAndDispatchOnAction" text="Packed And Dispatch">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#InventoryViewOnAction" text="Inventory View">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#RestockItemsOnAction" text="Restock Items">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="85.0" mnemonicParsing="false" onAction="#DispatchScheduleOnAction" text="Dispatch Schedule">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#InventoryIssuesOnAction" text="Inventory Issues">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="135.0" mnemonicParsing="false" onAction="#StockOverviewOnAction" text="Stock Overview">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+                </Button>
+                <Button layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#PackingSlipsAndLabels" prefHeight="25.0" prefWidth="157.0" text="Packing Slips And Labels">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgrey;" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>
