@@ -1,36 +1,37 @@
 package com.example.chainclothingproject.DeliveryAgent;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class ViewDeliveryListController
+public class UpdateDeliveryStatusController
 {
     @javafx.fxml.FXML
-    private TableColumn addressTC;
+    private TextField updateStatusTextfield;
     @javafx.fxml.FXML
-    private TableColumn customernameTC;
+    private ComboBox selectStatusCB;
     @javafx.fxml.FXML
-    private TableColumn PhoneNoTC;
+    private TableView orderTableView;
     @javafx.fxml.FXML
-    private TextField detailsTextfield;
+    private TextField orderIdTF;
     @javafx.fxml.FXML
     private TableColumn statusTC;
     @javafx.fxml.FXML
-    private TableView deliveryTableView;
+    private TableColumn customerNameTC;
     @javafx.fxml.FXML
-    private TableColumn orderIdTC;
+    private TableColumn orderidTC;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void myDeliveriesOA(ActionEvent actionEvent) {
+    public void orderTrackingOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void viewDetailsOA(ActionEvent actionEvent) {
+    public void userStatusOA(ActionEvent actionEvent) {
     }
 }
