@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Seller.AddProductController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: aliceblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" text="Add Product">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <AnchorPane prefHeight="492.0" prefWidth="766.0" style="-fx-background-color: Lavender;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="Enterproductnametextbox" layoutX="201.0" layoutY="14.0" promptText="Enter Product Name" />
+            <TextField fx:id="EnterproductIDtextbox" layoutX="23.0" layoutY="14.0" promptText="Enter Product ID" />
+            <ComboBox fx:id="categorycombobox" layoutX="398.0" layoutY="14.0" prefWidth="150.0" promptText="Category" style="-fx-background-color: white; -fx-border-color: silver;" />
+            <TextField fx:id="pricetextbox" layoutX="23.0" layoutY="129.0" promptText="Price?" />
+            <TextField fx:id="sizetextbox" layoutX="399.0" layoutY="129.0" promptText="Size?" />
+            <TextField fx:id="brandtextbox" layoutX="201.0" layoutY="129.0" promptText="Brand?" />
+            <TextArea fx:id="descriptiontextarea" layoutX="23.0" layoutY="216.0" prefHeight="106.0" prefWidth="540.0" style="-fx-background-color: flora;white;" />
+            <Label layoutX="22.0" layoutY="190.0" text="Description:" />
+            <Button layoutX="14.0" layoutY="380.0" mnemonicParsing="false" onAction="#saveproductonactionbutton" prefHeight="34.0" prefWidth="310.0" style="-fx-background-color: aliceblue; -fx-border-color: silver;" text="Save Product" />
+            <Button layoutX="14.0" layoutY="433.0" mnemonicParsing="false" onAction="#goBackToDashboardOnactionButton" prefHeight="30.0" prefWidth="315.0" style="-fx-background-color: aliceblue; -fx-border-color: silver;" text="Dashboard" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
