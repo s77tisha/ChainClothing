@@ -10,15 +10,19 @@ public class ReturnOrCancelltemController
     @javafx.fxml.FXML
     private RadioButton returnRB;
     @javafx.fxml.FXML
-    private TableView<String> orderTableView;
-    @javafx.fxml.FXML
-    private TextField idTextfield;
-    @javafx.fxml.FXML
     private TableColumn <Class,String> statusTC;
     @javafx.fxml.FXML
-    private TableColumn<Class,String> itemTC;
+    private TableView productTableView;
     @javafx.fxml.FXML
-    private ComboBox<String> reasonCombobox;
+    private TableColumn productNameTC;
+    @javafx.fxml.FXML
+    private TableColumn productIdTC;
+    @javafx.fxml.FXML
+    private TableColumn OrderIdTC;
+    @javafx.fxml.FXML
+    private TextArea reasonCancleReturnTextArea;
+    @javafx.fxml.FXML
+    private TextField enterProductIdTextField;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -28,7 +32,11 @@ public class ReturnOrCancelltemController
     public void myOrderOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void submitOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void confirmOA(ActionEvent actionEvent) {
     }
 }

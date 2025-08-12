@@ -6,18 +6,31 @@ import javafx.scene.control.TextField;
 
 public class ViewProductAndReviewController
 {
+
     @javafx.fxml.FXML
-    private TextField showProductInfoTextField1;
+    private TableView productTableView;
     @javafx.fxml.FXML
-    private TextField displayReviewsTextField;
+    private TableColumn discountTC;
     @javafx.fxml.FXML
-    private ComboBox<String> productListCombobox;
+    private TableColumn productNameTC;
+    @javafx.fxml.FXML
+    private TableColumn productPriceTC;
+    @javafx.fxml.FXML
+    private TableColumn reviewTC;
+    @javafx.fxml.FXML
+    private TableColumn productIdTC;
+    @javafx.fxml.FXML
+    private TableColumn stockTC;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void viewSizeOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void showProductDetailsOA(ActionEvent actionEvent) {
     }
 }

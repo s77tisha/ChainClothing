@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Customer.BrowseAndFilterController">
    <children>
-      <Label layoutX="248.0" layoutY="43.0" text="Browse and Filter">
+      <Label layoutX="215.0" layoutY="22.0" prefHeight="33.0" prefWidth="170.0" text="Browse and Filter" textFill="#1a0294">
          <font>
             <Font name="System Bold" size="18.0" />
          </font></Label>
-      <Button layoutX="29.0" layoutY="91.0" mnemonicParsing="false" onAction="#shopbyCategoryOA" text="Shop by Category" />
-      <Label fx:id="categoryCombobox" layoutX="29.0" layoutY="133.0" text="Category" />
-      <ComboBox layoutX="98.0" layoutY="129.0" prefWidth="150.0" />
-      <Label layoutX="39.0" layoutY="183.0" text="Show items with details" />
-      <TextField fx:id="showItemsWithDetailsTextField" layoutX="183.0" layoutY="179.0" prefHeight="26.0" prefWidth="377.0" />
-      <Label layoutX="39.0" layoutY="221.0" text="Filters" />
-      <CheckBox fx:id="priceCheckbox" layoutX="85.0" layoutY="221.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="169.0" text="Price" />
-      <CheckBox fx:id="sizeCheckbox" layoutX="183.0" layoutY="222.0" mnemonicParsing="false" text="size" />
-      <CheckBox fx:id="brandCheckbox" layoutX="285.0" layoutY="221.0" mnemonicParsing="false" text="Brand" />
-      <CheckBox fx:id="othersCheckbox" layoutX="372.0" layoutY="222.0" mnemonicParsing="false" text="Others" />
-      <Label layoutX="31.0" layoutY="265.0" text="Updated list display" />
-      <TextField fx:id="updatedListDisplayTextField" layoutX="15.0" layoutY="283.0" prefHeight="82.0" prefWidth="378.0" />
+      <Button layoutX="459.0" layoutY="98.0" mnemonicParsing="false" onAction="#showAllOA" text="Show all" />
+      <Label fx:id="categoryCombobox" layoutX="23.0" layoutY="102.0" text="Category" />
+      <ComboBox fx:id="catagoryCombobox" layoutX="88.0" layoutY="98.0" prefWidth="150.0" promptText="choose a category" />
+      <TableView fx:id="productTableView" layoutX="28.0" layoutY="156.0" prefHeight="200.0" prefWidth="526.0">
+        <columns>
+          <TableColumn fx:id="productIdTC" prefWidth="75.0" text="Product id " />
+          <TableColumn fx:id="productNameTC" prefWidth="75.0" text="Name " />
+            <TableColumn fx:id="productPriceTC" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="sizeTC" prefWidth="75.0" text="Size" />
+            <TableColumn fx:id="availabilityTC" prefWidth="75.0" text="Availability" />
+            <TableColumn fx:id="brandTC" prefWidth="75.0" text="Brand" />
+            <TableColumn fx:id="discountTC" prefWidth="75.0" text="Discount" />
+        </columns>
+      </TableView>
+      <Button layoutX="260.0" layoutY="98.0" mnemonicParsing="false" onAction="#FilterByCategoryOA" text="Filter by category" />
    </children>
 </AnchorPane>

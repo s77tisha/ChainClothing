@@ -8,25 +8,39 @@ import javafx.scene.control.TextField;
 public class BrowseAndFilterController
 {
     @javafx.fxml.FXML
-    private CheckBox othersCheckbox;
-    @javafx.fxml.FXML
-    private CheckBox brandCheckbox;
-    @javafx.fxml.FXML
     private Label categoryCombobox;
     @javafx.fxml.FXML
-    private TextField updatedListDisplayTextField;
+    private TableView productTableView;
     @javafx.fxml.FXML
-    private CheckBox priceCheckbox;
+    private TableColumn discountTC;
     @javafx.fxml.FXML
-    private CheckBox sizeCheckbox;
+    private TableColumn productNameTC;
     @javafx.fxml.FXML
-    private TextField showItemsWithDetailsTextField;
+    private TableColumn productPriceTC;
+    @javafx.fxml.FXML
+    private TableColumn availabilityTC;
+    @javafx.fxml.FXML
+    private ComboBox catagoryCombobox;
+    @javafx.fxml.FXML
+    private TableColumn productIdTC;
+    @javafx.fxml.FXML
+    private TableColumn brandTC;
+    @javafx.fxml.FXML
+    private TableColumn sizeTC;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void shopbyCategoryOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void FilterByCategoryOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void showAllOA(ActionEvent actionEvent) {
     }
 }
