@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="WarehouseBoarderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.WarehouseStaff.WarehouseStaffController">
+<BorderPane fx:id="WarehouseBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.WarehouseStaff.WarehouseStaffController">
     <top>
         <MenuBar BorderPane.alignment="CENTER">
             <menus>
@@ -32,7 +32,7 @@
         </MenuBar>
     </top>
     <left>
-        <VBox prefHeight="490.0" prefWidth="187.0" style="-fx-background-color: lightpink;" BorderPane.alignment="CENTER">
+        <VBox fx:id="WarehouseStaffVBoxFxid" prefHeight="490.0" prefWidth="187.0" style="-fx-background-color: lightpink;" BorderPane.alignment="CENTER">
             <children>
                 <Button mnemonicParsing="false" onAction="#PendingPackagingOnAction" text="Pending Packaging">
                     <VBox.margin>
