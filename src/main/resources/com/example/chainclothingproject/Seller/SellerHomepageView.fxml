@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="690.0" prefWidth="744.0" style="-fx-background-color: floralwhite;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Seller.SellerHomepageController"/>
+
