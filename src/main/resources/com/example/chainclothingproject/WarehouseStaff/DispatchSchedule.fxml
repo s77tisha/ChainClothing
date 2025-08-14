@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.chainclothingproject.WarehouseStaff.DispatchScheduleController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.WarehouseStaff.DispatchScheduleController">
+   <children>
+      <TableView fx:id="DiapatchScheduleStatusTableView" layoutX="48.0" layoutY="21.0" prefHeight="200.0" prefWidth="285.0">
+        <columns>
+          <TableColumn fx:id="DiapatchScheduleProductIDTableColumn" prefWidth="84.0" text="Product ID" />
+          <TableColumn fx:id="DiapatchScheduleOrderIDtableColumn" prefWidth="82.0" text="Order ID" />
+            <TableColumn fx:id="DiapatchScheduleStatusTableColumn" prefWidth="118.0" text="Status" />
+        </columns>
+      </TableView>
+      <TableView fx:id="UpdatedDispatchScheduleTableView" layoutX="365.0" layoutY="121.0" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="DiapatchScheduleProductIDUpdatedTableColumn" prefWidth="75.0" text="Product ID" />
+            <TableColumn fx:id="DiapatchScheduleDeliveryAssignedTableColumn" prefWidth="124.0" text="Delivery Assigned" />
+         </columns>
+      </TableView>
+      <Label layoutX="48.0" layoutY="272.0" text="Product ID" />
+      <TextField fx:id="DiapatchScheduleProductIDTextField" layoutX="131.0" layoutY="268.0" />
+      <Button layoutX="105.0" layoutY="336.0" mnemonicParsing="false" onAction="#AssignedToDeliveryAgentOnAction" prefHeight="25.0" prefWidth="229.0" text="Assign To Delivery Agent" />
+   </children>
 </AnchorPane>
