@@ -1,9 +1,7 @@
 package com.example.chainclothingproject.Customer;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 public class BrowseAndFilterController
 {
@@ -31,6 +29,8 @@ public class BrowseAndFilterController
     @javafx.fxml.FXML
     public void initialize() {
     }
+
+
 
     @Deprecated
     public void shopbyCategoryOA(ActionEvent actionEvent) {
