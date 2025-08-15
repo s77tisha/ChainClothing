@@ -1,26 +1,30 @@
 package com.example.chainclothingproject.DeliveryAgent;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class ReturnDamagedItemsController
 {
     @javafx.fxml.FXML
-    private TableView returnTV;
+    private TextField orderIdTextField;
     @javafx.fxml.FXML
-    private TextField returnReceiptTF;
+    private TextField MarkfailedTF;
     @javafx.fxml.FXML
-    private TextField orderidTF;
+    private TextField reasonTF;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void returnReceipOA(ActionEvent actionEvent) {
+    public void markFailedOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void returnWarehouseOA(ActionEvent actionEvent) {
+    public void warehouseOA(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void updateOA(ActionEvent actionEvent) {
+    }
+}

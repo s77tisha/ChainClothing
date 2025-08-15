@@ -3,10 +3,13 @@ package com.example.chainclothingproject.WarehouseStaff;
 import com.example.chainclothingproject.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
-public class WarehouseStaffController
+public class WarehouseStaffDashboardController
 {
     @javafx.fxml.FXML
     private VBox WarehouseStaffVBoxFxid;
@@ -19,13 +22,12 @@ public class WarehouseStaffController
 
     @javafx.fxml.FXML
     public void InventoryIssuesOnAction(ActionEvent actionEvent) {
-        try {
+        try{
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("InventoryIssues.fxml"));
             WarehouseBorderPane.setCenter(fxmlLoader.load());
 
-        } catch (Exception e) {//
-        }
-    }
+        }catch (Exception e){//}
+    }}
 
     @javafx.fxml.FXML
     public void PendingPackagingOnAction(ActionEvent actionEvent) {
@@ -42,11 +44,11 @@ public class WarehouseStaffController
     @javafx.fxml.FXML
     public void PackingSlipsAndLabels(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("PackingSlipsAndLabels.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("PendingPackaging.fxml"));
             WarehouseBorderPane.setCenter(fxmlLoader.load());
+
         } catch (Exception e) {//
-        }
-    }
+    }}
 
 
     @javafx.fxml.FXML
@@ -94,10 +96,33 @@ public class WarehouseStaffController
 
     @javafx.fxml.FXML
     public void DispatchScheduleOnAction(ActionEvent actionEvent) {
+
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("DispatchSchedule.fxml"));
             WarehouseBorderPane.setCenter(fxmlLoader.load());
+
         } catch (Exception e) {//
+
+
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void LogOutOnAction(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LoginView.fxml"));
+            Scene Nextscene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("login View");
+            nextStage.setScene(Nextscene);
+            nextStage.show();
+
+        }
+        catch (Exception e){
+            //
         }
     }
 }
+
+
+

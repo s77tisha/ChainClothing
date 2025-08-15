@@ -4,22 +4,30 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+<<<<<<< HEAD
+=======
+import javafx.scene.control.cell.PropertyValueFactory;
+>>>>>>> 0f856be399ffc18f4d934bc71946e9e7c12b6585
 
 public class PackagingSlipsAndLabelsController
 {
     @javafx.fxml.FXML
-    private TableView PrintSlipsTableView;
+    private TableView<PackagingSlipsAndlabels> PrintSlipsTableView;
     @javafx.fxml.FXML
-    private TableColumn SlipsTotalPricetableColumn;
+    private TableColumn<PackagingSlipsAndlabels,String> SlipsTotalPricetableColumn;
     @javafx.fxml.FXML
-    private TableColumn SlipsProductNameTableColumn;
+    private TableColumn<PackagingSlipsAndlabels,String> SlipsProductNameTableColumn;
     @javafx.fxml.FXML
     private Label SlipsLabel;
     @javafx.fxml.FXML
-    private TableColumn SlipsQuantityTableColumn;
+    private TableColumn<PackagingSlipsAndlabels,String> SlipsQuantityTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
+        SlipsProductNameTableColumn.setCellValueFactory(new PropertyValueFactory<PackagingSlipsAndlabels,String> ("product name"));
+        SlipsQuantityTableColumn.setCellValueFactory(new PropertyValueFactory<PackagingSlipsAndlabels,String> ("Quantity"));
+        SlipsTotalPricetableColumn.setCellValueFactory(new PropertyValueFactory<PackagingSlipsAndlabels,String> ("Price"));
+
     }
 
     @javafx.fxml.FXML
