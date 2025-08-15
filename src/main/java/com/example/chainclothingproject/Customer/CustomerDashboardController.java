@@ -3,8 +3,11 @@ package com.example.chainclothingproject.Customer;
 import com.example.chainclothingproject.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 public class CustomerDashboardController
 {
@@ -18,9 +21,6 @@ public class CustomerDashboardController
     public void initialize() {
     }
 
-    @Deprecated
-    public void signoutOA(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void addItemOA(ActionEvent actionEvent) {
@@ -34,17 +34,8 @@ public class CustomerDashboardController
         }
     }
 
-    @Deprecated
-    public void returnOrCancelltemOA(ActionEvent actionEvent) {
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/ReturnOrCancelltem.fxml"));
-            customerDashboardBoarderPane.setCenter(fxmlLoader.load());
 
-        }
-        catch (Exception e){
-            //
-        }
-    }
+
 
     @javafx.fxml.FXML
     public void trackOrderOA(ActionEvent actionEvent) {
@@ -61,7 +52,7 @@ public class CustomerDashboardController
     @javafx.fxml.FXML
     public void placeOrderOA(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("PlaceOrder.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/PlaceOrder.fxml"));
             customerDashboardBoarderPane.setCenter(fxmlLoader.load());
 
         }
@@ -96,17 +87,7 @@ public class CustomerDashboardController
         }
     }
 
-    @javafx.fxml.FXML
-    public void returnOrCancelItemOA(ActionEvent actionEvent) {
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/ReturnOrCancelItem.fxml"));
-            customerDashboardBoarderPane.setCenter(fxmlLoader.load());
 
-        }
-        catch (Exception e){
-            //
-        }
-    }
 
     @javafx.fxml.FXML
     public void feedbackOA(ActionEvent actionEvent) {
@@ -123,7 +104,7 @@ public class CustomerDashboardController
     @javafx.fxml.FXML
     public void askQuestionsOA(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/Ask Questions.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/askQuestions.fxml"));
             customerDashboardBoarderPane.setCenter(fxmlLoader.load());
 
         }
@@ -134,5 +115,32 @@ public class CustomerDashboardController
 
     @javafx.fxml.FXML
     public void logOutOA(ActionEvent actionEvent) {
+
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LoginView.fxml"));
+            Scene Nextscene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("login View");
+            nextStage.setScene(Nextscene);
+            nextStage.show();
+
+        }
+        catch (Exception e){
+            //
+        }
+
+
+    }
+
+    @javafx.fxml.FXML
+    public void returnOrCancelItemOA(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/ReturnOrCancelItem.fxml"));
+            customerDashboardBoarderPane.setCenter(fxmlLoader.load());
+
+        }
+        catch (Exception e){
+            //
+        }
     }
 }

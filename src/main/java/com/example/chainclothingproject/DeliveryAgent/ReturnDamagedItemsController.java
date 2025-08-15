@@ -1,5 +1,9 @@
 package com.example.chainclothingproject.DeliveryAgent;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+
 public class ReturnDamagedItemsController
 {
     @javafx.fxml.FXML

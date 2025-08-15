@@ -1,5 +1,16 @@
 package com.example.chainclothingproject.Customer;
 
+import com.example.chainclothingproject.HelloApplication;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
 public class AskQuestionController
 {
 
@@ -22,7 +33,28 @@ public class AskQuestionController
     public void signUpOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void askeQuestionOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void askQuestionOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void productListOA(ActionEvent actionEvent) {
+
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/BrowseAndFilter.fxml"));
+            Scene Nextscene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("Customer/BrowseAndFilter");
+            nextStage.setScene(Nextscene);
+            nextStage.show();
+
+        }
+        catch (Exception e){
+            //
+        }
     }
 }

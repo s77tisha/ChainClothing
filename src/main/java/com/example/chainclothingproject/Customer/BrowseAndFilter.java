@@ -19,6 +19,9 @@ public class BrowseAndFilter {
         this.discount = discount;
     }
 
+    public BrowseAndFilter(String number, String dress, String number1, String l, String inStock, String brandB, String s, String female) {
+    }
+
     public String getName() {
         return name;
     }
@@ -87,4 +90,10 @@ public class BrowseAndFilter {
                 ", discount=" + discount +
                 '}';
     }
+
+   // public String getCategory() {
+
+
+   // }
+
 }

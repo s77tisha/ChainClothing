@@ -5,6 +5,7 @@ import com.example.chainclothingproject.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 
 public class WarehouseStaffController
 {

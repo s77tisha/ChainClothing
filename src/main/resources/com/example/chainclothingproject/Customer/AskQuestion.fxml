@@ -15,7 +15,7 @@
          <font>
             <Font name="System Bold" size="20.0" />
          </font></Label>
-      <Button layoutX="423.0" layoutY="343.0" mnemonicParsing="false" onAction="#askeQuestionOA" text="Ask question" textFill="#0c3159" />
+      <Button layoutX="423.0" layoutY="343.0" mnemonicParsing="false" onAction="#askQuestionOA" text="Ask question" textFill="#0c3159" />
       <TextField fx:id="enterProductIdTextField" layoutX="34.0" layoutY="263.0" promptText="Enter product id " />
       <TableView fx:id="productTableView" layoutX="34.0" layoutY="85.0" prefHeight="158.0" prefWidth="150.0">
          <columns>
@@ -24,5 +24,6 @@
          </columns>
       </TableView>
       <TextArea fx:id="writeQueriesTextArea" layoutX="35.0" layoutY="305.0" prefHeight="74.0" prefWidth="370.0" promptText="Write your queries" />
+      <Button layoutX="35.0" layoutY="51.0" mnemonicParsing="false" onAction="#productListOA" text="Product List" />
    </children>
 </AnchorPane>

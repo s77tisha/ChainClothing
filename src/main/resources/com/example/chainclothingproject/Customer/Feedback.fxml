@@ -16,7 +16,7 @@
             <Font name="System Bold" size="28.0" />
          </font>
       </Label>
-      <TableView fx:id="productTableView" layoutX="14.0" layoutY="87.0" prefHeight="127.0" prefWidth="424.0">
+      <TableView fx:id="productTableView" layoutX="14.0" layoutY="95.0" prefHeight="127.0" prefWidth="424.0">
          <columns>
             <TableColumn fx:id="OrderIdTC" prefWidth="75.0" text="Order id " />
             <TableColumn fx:id="productNameTC" prefWidth="124.800048828125" text="Product Name" />
