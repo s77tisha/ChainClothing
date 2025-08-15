@@ -3,8 +3,11 @@ package com.example.chainclothingproject.WarehouseStaff;
 import com.example.chainclothingproject.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 public class WarehouseStaffDashboardController
 {
@@ -101,6 +104,22 @@ public class WarehouseStaffDashboardController
         } catch (Exception e) {//
 
 
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void LogOutOnAction(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LoginView.fxml"));
+            Scene Nextscene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("login View");
+            nextStage.setScene(Nextscene);
+            nextStage.show();
+
+        }
+        catch (Exception e){
+            //
         }
     }
 }

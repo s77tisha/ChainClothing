@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="WarehouseBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.WarehouseStaff.WarehouseStaffDashboardController">
+<BorderPane fx:id="WarehouseBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.WarehouseStaff.WarehouseStaffDashboardController">
     <top>
         <MenuBar BorderPane.alignment="CENTER">
             <menus>
@@ -74,7 +74,15 @@
                         <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
                     </VBox.margin>
                 </Button>
+            <Button mnemonicParsing="false" onAction="#LogOutOnAction" text="LogOut">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
             </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
         </VBox>
     </left>
     <center>
