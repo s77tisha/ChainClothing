@@ -5,6 +5,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -12,6 +15,20 @@ public class InventoryStatusController
 {
     @javafx.fxml.FXML
     private BorderPane borderpane;
+    @javafx.fxml.FXML
+    private ComboBox choosecategorytofilterCombobox;
+    @javafx.fxml.FXML
+    private TableColumn productNameColumnofInventorystatustableview;
+    @javafx.fxml.FXML
+    private TableColumn quantityinStockColumnofInventorystatustableview;
+    @javafx.fxml.FXML
+    private TableColumn productIDColumnofInventorystatustableview;
+    @javafx.fxml.FXML
+    private TableColumn categoryColumnofInventorystatustableview;
+    @javafx.fxml.FXML
+    private TableColumn statusflagColumnofInventorystatustableview;
+    @javafx.fxml.FXML
+    private TableView inventorystatusTableView;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -44,5 +61,21 @@ public class InventoryStatusController
             //
         }
 
+    }
+
+    @javafx.fxml.FXML
+    public void FIlterToShowOutofstocksOnactionbutton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ShowAllOnactionbutton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void FilterByCategoryOnactionbutton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void FIlterToShowLowstocksOnlyOnactionbutton(ActionEvent actionEvent) {
     }
 }

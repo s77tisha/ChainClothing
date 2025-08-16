@@ -8,10 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Customer.AddItemController">
    <children>
-      <TableView fx:id="productTableView" layoutX="6.0" layoutY="84.0" prefHeight="102.0" prefWidth="602.0">
+      <TableView fx:id="productTableView" layoutX="3.0" layoutY="158.0" prefHeight="102.0" prefWidth="602.0">
          <columns>
             <TableColumn fx:id="productIdTC" prefWidth="75.0" text="Product id " />
             <TableColumn fx:id="productNameTC" prefWidth="75.0" text="Name " />
@@ -20,7 +19,7 @@
             <TableColumn fx:id="availabilityTC" prefWidth="75.0" text="Availability" />
             <TableColumn fx:id="brandTC" prefWidth="84.800048828125" text="Brand" />
             <TableColumn fx:id="discountTC" prefWidth="72.0" text="Discount" />
-            <TableColumn fx:id="discountTC1" prefWidth="72.0" text="Feedback" />
+            <TableColumn fx:id="feedbackTC" prefWidth="72.0" text="Feedback" />
          </columns>
       </TableView>
       <Label layoutX="237.0" layoutY="14.0" text="Add Item" textFill="#1a0294">
@@ -28,17 +27,10 @@
             <Font name="System Bold" size="21.0" />
          </font>
       </Label>
-      <Button layoutX="176.0" layoutY="213.0" mnemonicParsing="false" onAction="#addToCartOA" text="Add to cart" />
-      <TextField fx:id="enterProductIdTextField" layoutX="9.0" layoutY="213.0" promptText="Enter product id " />
-      <TableView fx:id="productTableView1" layoutX="9.0" layoutY="262.0" prefHeight="122.0" prefWidth="334.0">
-         <columns>
-            <TableColumn fx:id="productIdTC1" prefWidth="75.0" text="Product id " />
-            <TableColumn fx:id="productNameTC1" prefWidth="124.800048828125" text="Name " />
-            <TableColumn fx:id="productPriceTC1" prefWidth="132.80002441406248" text="Price" />
-         </columns>
-      </TableView>
+      <Button layoutX="500.0" layoutY="119.0" mnemonicParsing="false" onAction="#addToCartOA" text="Add to cart" />
+      <TextField fx:id="enterProductIdTextField" layoutX="336.0" layoutY="119.0" promptText="Enter product id " />
       <TextField fx:id="enterProductIdTextField1" layoutX="368.0" layoutY="298.0" promptText="Enter product id " />
       <Button layoutX="391.0" layoutY="335.0" mnemonicParsing="false" onAction="#cancleFromCartOA" text="Cancle from cart" />
-      <Label layoutX="14.0" layoutY="59.0" text="Product details" />
+      <Button layoutX="14.0" layoutY="119.0" mnemonicParsing="false" onAction="#productDetailsOA" text="Product details" />
    </children>
 </AnchorPane>

@@ -7,23 +7,16 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class SetDiscountContoller
 {
+
     @javafx.fxml.FXML
-    private TextField productpriceTextfield;
-    @javafx.fxml.FXML
-    private TextField ProductnameTextfield;
-    @javafx.fxml.FXML
-    private DatePicker DiscountEndDatePicker;
-    @javafx.fxml.FXML
-    private DatePicker DiscountsratdatePicker;
-    @javafx.fxml.FXML
-    private TextField productidTextfield;
-    @javafx.fxml.FXML
-    private ComboBox HowMuchDiscountCombobox;
+    private TextArea ShowdiscountFormTextArea;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -31,9 +24,17 @@ public class SetDiscountContoller
 
     @javafx.fxml.FXML
     public void setdiscountOnactonbutton(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Seller/DiscountForm.fxml"));
+            ShowdiscountFormTextArea.setText(fxmlLoader.load());
+
+        }
+        catch (Exception e){
+            //
+        }
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void UpdatepriceinProductListOnactionButton(ActionEvent actionEvent) {
     }
 
@@ -51,5 +52,9 @@ public class SetDiscountContoller
         catch (Exception e){
             //
         }
+    }
+
+    @javafx.fxml.FXML
+    public void loadproductlistonactionbutton(ActionEvent actionEvent) {
     }
 }

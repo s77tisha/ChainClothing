@@ -3,6 +3,7 @@ package com.example.chainclothingproject.Seller;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 public class MarkOrdersProccessedController
 {
@@ -23,19 +24,15 @@ public class MarkOrdersProccessedController
     @javafx.fxml.FXML
     private TableColumn orderIDtablecolumnOfproccessedtableview;
     @javafx.fxml.FXML
-    private TableColumn customrenametablecolumnOfproccessedtableview;
-    @javafx.fxml.FXML
     private TableColumn productidtablecolumn;
     @javafx.fxml.FXML
     private TableColumn quantitytablecolumn;
     @javafx.fxml.FXML
     private TableView ordertableview;
     @javafx.fxml.FXML
-    private TableColumn productidtablecolumnOfproccessedtableview;
-    @javafx.fxml.FXML
-    private TableColumn deliveryaddresstablecolumn;
-    @javafx.fxml.FXML
     private TableColumn customeridtablecolumn;
+    @javafx.fxml.FXML
+    private TextField EnterOrderIDTomarkAsProccessedTextField;
 
     @javafx.fxml.FXML
     public void initialize() {

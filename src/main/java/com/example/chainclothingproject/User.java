@@ -1,27 +1,33 @@
 package com.example.chainclothingproject;
 
+import java.io.Serializable;
+
 import java.time.LocalDate;
 
-public class User {
-    private String id, name, phoneNo ,email, address ,gender ,password;
+public class User implements Serializable {
+    private int id;
+    private String  name, phoneNo ,email,gender ,password,role;
     private LocalDate dob;
 
-    public User(String id, String name, String phoneNo, String address, String email, String gender, String password, LocalDate dob) {
+    public User() {
+    }
+
+    public User(int id, String name, String phoneNo, String email, String gender, String password, String role, LocalDate dob) {
         this.id = id;
         this.name = name;
         this.phoneNo = phoneNo;
-        this.address = address;
         this.email = email;
         this.gender = gender;
         this.password = password;
+        this.role = role;
         this.dob = dob;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -49,13 +55,7 @@ public class User {
         this.email = email;
     }
 
-    public String getAddress() {
-        return address;
-    }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
     public String getGender() {
         return gender;
@@ -73,6 +73,14 @@ public class User {
         this.password = password;
     }
 
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
     public LocalDate getDob() {
         return dob;
     }
@@ -88,9 +96,9 @@ public class User {
                 ", name='" + name + '\'' +
                 ", phoneNo='" + phoneNo + '\'' +
                 ", email='" + email + '\'' +
-                ", address='" + address + '\'' +
                 ", gender='" + gender + '\'' +
                 ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
                 ", dob=" + dob +
                 '}';
     }

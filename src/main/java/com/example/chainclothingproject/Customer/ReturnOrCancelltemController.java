@@ -10,9 +10,19 @@ public class ReturnOrCancelltemController
     @javafx.fxml.FXML
     private RadioButton returnRB;
     @javafx.fxml.FXML
+<<<<<<< HEAD
+    private TableView<String> orderTableView;
+    @javafx.fxml.FXML
+    private TextField idTextfield;
+    @javafx.fxml.FXML
+    private TableColumn <?,?> statusTC;
+    @javafx.fxml.FXML
+    private TableColumn<?,String> itemTC;
+=======
     private TableColumn <Class,String> statusTC;
     @javafx.fxml.FXML
     private TableView productTableView;
+>>>>>>> d29ad5845ce2d0998461b0b2d0c9f87f272eadbf
     @javafx.fxml.FXML
     private TableColumn productNameTC;
     @javafx.fxml.FXML

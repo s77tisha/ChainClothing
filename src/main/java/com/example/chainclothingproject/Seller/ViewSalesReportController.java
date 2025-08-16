@@ -5,39 +5,51 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 public class ViewSalesReportController
 {
     @javafx.fxml.FXML
-    private TableColumn monthtablecolumnofMonthlysalestableview;
-    @javafx.fxml.FXML
-    private TableView topsellingproducttableview;
-    @javafx.fxml.FXML
     private DatePicker Startdatedatepicker;
     @javafx.fxml.FXML
-    private TableColumn UnitsoldcolumnofGoodSoldtableview;
-    @javafx.fxml.FXML
-    private TableColumn RevenueGeneratedcolumnofGoodSoldtableview;
-    @javafx.fxml.FXML
-    private TableColumn NoOfOrderstablecolumnofMonthlysalestableview;
-    @javafx.fxml.FXML
-    private TableColumn RevenuetablecolumnofMonthlysalestableview;
-    @javafx.fxml.FXML
-    private TableView Monthlysalestableview;
-    @javafx.fxml.FXML
-    private TableColumn ProductnamecolumnofGoodsSoldtableview;
-    @javafx.fxml.FXML
     private DatePicker enddatdatepicker;
+    @javafx.fxml.FXML
+    private TableView RevenueTableView;
+    @javafx.fxml.FXML
+    private TableColumn ProductNameColumnTopsellingTableview;
+    @javafx.fxml.FXML
+    private TableColumn orderIDcolumnTopsellingTableview;
+    @javafx.fxml.FXML
+    private TableColumn quantityColumnTopSellingTableView;
+    @javafx.fxml.FXML
+    private TableColumn subtotalColumnOfSalerecordTableView;
+    @javafx.fxml.FXML
+    private TableColumn revenueColumnRevenueTableView;
+    @javafx.fxml.FXML
+    private TableView TopSellingTableView;
+    @javafx.fxml.FXML
+    private TableView SaleRecordTableView;
+    @javafx.fxml.FXML
+    private Label ShowTopSellingProduct;
+    @javafx.fxml.FXML
+    private Button loadEachMonthRevenueInTableView;
+    @javafx.fxml.FXML
+    private TableColumn OrderDateColumnOfSalerecordtableView;
+    @javafx.fxml.FXML
+    private TableColumn OrderIDColumnOfSalerecordTable;
+    @javafx.fxml.FXML
+    private TableColumn MonthColumnRevenuetableView;
+    @javafx.fxml.FXML
+    private Label ShowHighestRevenueMonthLabel;
+    @javafx.fxml.FXML
+    private Label ShowrevenueofAMonthLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void calculateYearlyRevenueonactionbuttonclick(ActionEvent actionEvent) {
     }
 
@@ -65,7 +77,19 @@ public class ViewSalesReportController
     public void highestrevenueMonthonactionbuttonclick(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void Mostsoldproductonactionbuttonclick(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ShowallREvenueOnActionButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void loadsalerecordOnactionbutton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void TopSellingProductOnactionButton(ActionEvent actionEvent) {
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -8,7 +9,6 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Seller.MarkOrdersProccessedController">
    <top>
@@ -25,7 +25,7 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <TableView fx:id="ordertableview" layoutY="35.0" prefHeight="176.0" prefWidth="763.0">
+            <TableView fx:id="ordertableview" layoutY="35.0" prefHeight="176.0" prefWidth="648.0">
               <columns>
                 <TableColumn fx:id="orderIDtablecolumn" prefWidth="75.0" text="Order ID" />
                 <TableColumn fx:id="customeridtablecolumn" prefWidth="75.0" text="Customer ID" />
@@ -33,23 +33,21 @@
                   <TableColumn fx:id="productidtablecolumn" prefWidth="97.5999755859375" text="Product ID" />
                   <TableColumn fx:id="quantitytablecolumn" prefWidth="80.79998779296875" text="Quantity" />
                   <TableColumn fx:id="orderdatetablecolumn" prefWidth="99.99996948242188" text="Order Date" />
-                  <TableColumn fx:id="deliveryaddresstablecolumn" prefWidth="114.39990234375" text="D.Address" />
                   <TableColumn fx:id="statustablecolumn" prefWidth="117.60003662109375" text="Status" />
               </columns>
             </TableView>
             <Button layoutX="602.0" layoutY="218.0" mnemonicParsing="false" onAction="#markorderasproccessedonactionbutton" text="Mark Order as Proccessed" />
             <Button layoutX="603.0" layoutY="485.0" mnemonicParsing="false" onAction="#gobacktodashboardonactionbutton" prefHeight="26.0" prefWidth="152.0" text="🔙 Back to Dashboard" />
-            <TableView fx:id="Proccessedordertableview" layoutX="133.0" layoutY="275.0" prefHeight="200.0" prefWidth="546.0">
+            <TableView fx:id="Proccessedordertableview" layoutY="285.0" prefHeight="200.0" prefWidth="333.0">
               <columns>
                   <TableColumn fx:id="orderIDtablecolumnOfproccessedtableview" prefWidth="75.0" text="Order ID" />
                   <TableColumn fx:id="customeridtablecolumnOfproccessedtableview" prefWidth="114.4000015258789" text="Customer ID" />
-                  <TableColumn fx:id="customrenametablecolumnOfproccessedtableview" prefWidth="114.4000244140625" text="Customer Name" />
-                  <TableColumn fx:id="productidtablecolumnOfproccessedtableview" prefWidth="95.199951171875" text="Product ID" />
                   <TableColumn fx:id="updatedstatustablecolumnOfproccessedtableview" prefWidth="142.39999389648438" text="Updated Status" />
               </columns>
             </TableView>
             <Label layoutX="315.0" layoutY="14.0" text="Order Details Table View:" />
-            <Label layoutX="328.0" layoutY="254.0" text="Proccessed Order Table View:" />
+            <Label layoutX="7.0" layoutY="263.0" text="&quot;Marked Proccessed&quot; Order Table View:" />
+            <TextField fx:id="EnterOrderIDTomarkAsProccessedTextField" layoutX="437.0" layoutY="218.0" promptText="Enter Order ID" />
          </children>
       </AnchorPane>
    </center>
