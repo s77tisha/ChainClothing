@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.DeliveryAgent.ReportDeliveryIssuesController">
+   <children>
+      <Label layoutX="187.0" layoutY="21.0" text="Report Delivery Issues">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="orderIdTF" layoutX="27.0" layoutY="83.0" promptText="order id" />
+      <TextArea fx:id="writeIssueTA" layoutX="20.0" layoutY="136.0" prefHeight="200.0" prefWidth="200.0" promptText="write the issue" />
+      <Button layoutX="281.0" layoutY="317.0" mnemonicParsing="false" onAction="#submitIssueOA" text="submit issue" />
+   </children>
+</AnchorPane>

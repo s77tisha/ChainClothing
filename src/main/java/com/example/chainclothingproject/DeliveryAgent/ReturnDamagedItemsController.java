@@ -24,3 +24,4 @@ public class ReturnDamagedItemsController
     @javafx.fxml.FXML
     public void returnWarehouseOA(ActionEvent actionEvent) {
     }
+}

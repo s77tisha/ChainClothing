@@ -104,7 +104,7 @@ public class CustomerDashboardController
     @javafx.fxml.FXML
     public void askQuestionsOA(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/askQuestions.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/AskQuestion.fxml"));
             customerDashboardBoarderPane.setCenter(fxmlLoader.load());
 
         }
@@ -135,7 +135,7 @@ public class CustomerDashboardController
     @javafx.fxml.FXML
     public void returnOrCancelItemOA(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/ReturnOrCancelItem.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/ReturnOrCancelltem.fxml"));
             customerDashboardBoarderPane.setCenter(fxmlLoader.load());
 
         }

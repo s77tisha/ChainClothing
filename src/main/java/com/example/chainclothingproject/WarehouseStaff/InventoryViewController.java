@@ -1,17 +1,17 @@
 package com.example.chainclothingproject.WarehouseStaff;
 
 import javafx.event.ActionEvent;
-<<<<<<< HEAD
+
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-=======
+
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
->>>>>>> 0f856be399ffc18f4d934bc71946e9e7c12b6585
+
 
 public class InventoryViewController
 {

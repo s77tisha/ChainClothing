@@ -62,7 +62,7 @@ public class BrowseAndFilterController
             productTableView.getItems().clear();
 
             for (BrowseAndFilter product : productList) {
-                if (product.getName().equals(selectedCategory)) { // exact match
+                if (product.getName().equals(selectedCategory)) {
                     productTableView.getItems().add(String.valueOf(product));
                 }
             }
