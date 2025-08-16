@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.chainclothingproject.ReturnAgent.ApproveOrRejectReturnController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.ReturnAgent.ApproveOrRejectRequest">
 
+    <Label layoutX="20" layoutY="20" style="-fx-font-size: 18px;" text="Approve / Reject Return" />
+
+    <Label layoutX="20" layoutY="70" text="Return Request ID:" />
+    <TextField fx:id="requestIdtextField" layoutX="160" layoutY="65" prefWidth="200" />
+
+    <Label layoutX="20" layoutY="120" text="Reason for Return:" />
+    <TextField fx:id="reasontextField" layoutX="160" layoutY="115" prefWidth="400" />
+
+    <Button layoutX="160" layoutY="170" onAction="#approveReturn" text="Approve" />
+    <Button layoutX="250" layoutY="170" onAction="#rejectReturn" text="Reject" />
+
+    <Button layoutX="20" layoutY="230" onAction="#goBack" text="Back" />
 </AnchorPane>

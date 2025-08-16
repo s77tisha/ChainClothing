@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Accountant.RecordPaymentsCONTROLLER">
+   <children>
+      <Label layoutX="229.0" layoutY="35.0" prefHeight="28.0" prefWidth="155.0" text="Record Payments">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="88.0" text="OrderID" />
+      <Label layoutX="5.0" layoutY="119.0" text="Customer name" />
+      <Label layoutX="34.0" layoutY="151.0" text="Amount" />
+      <Label layoutX="288.0" layoutY="88.0" prefHeight="17.0" prefWidth="59.0" text="Payment" />
+      <TextField fx:id="Orderidtextfiled" layoutX="87.0" layoutY="84.0" />
+      <TextField fx:id="CustomerNametextfield" layoutX="87.0" layoutY="115.0" />
+      <TextField fx:id="amounttextfield" layoutX="87.0" layoutY="147.0" />
+      <ComboBox fx:id="paymentcombobox" layoutX="339.0" layoutY="84.0" prefWidth="150.0" />
+      <Button layoutX="321.0" layoutY="147.0" mnemonicParsing="false" text="Save Payment" />
+      <TableView fx:id="Tableview" layoutX="62.0" layoutY="229.0" prefHeight="126.0" prefWidth="302.0">
+        <columns>
+          <TableColumn fx:id="Oderidtableview" prefWidth="75.0" text="Order ID" />
+          <TableColumn fx:id="custumeridtableview" prefWidth="75.0" text="Customer Id" />
+            <TableColumn fx:id="amounttableviw" prefWidth="75.0" text="Amount" />
+            <TableColumn fx:id="paymenttableview" prefWidth="75.0" text="Payment" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

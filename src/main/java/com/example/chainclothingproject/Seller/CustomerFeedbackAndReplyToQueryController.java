@@ -5,41 +5,36 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
-public class ManageCustomerOrderContoller
+public class CustomerFeedbackAndReplyToQueryController
 {
     @javafx.fxml.FXML
-    private DatePicker orderdateDatepicker;
+    private TableColumn CategotycolumnofCustomerFeedbacktableview12;
     @javafx.fxml.FXML
-    private CheckBox confirmedcheckboxOrderstatus;
+    private TableColumn productIDcolumnofCustomerFeedbacktableview;
     @javafx.fxml.FXML
-    private TextField customernametextbox;
+    private TableColumn productnamecolumnofCustomerFeedbacktableview;
     @javafx.fxml.FXML
-    private TextField quantitytextbox;
+    private TableColumn CategotycolumnofCustomerFeedbacktableview1;
     @javafx.fxml.FXML
-    private TextField customeridtextbox;
+    private TableColumn CategotycolumnofCustomerFeedbacktableview11;
     @javafx.fxml.FXML
-    private CheckBox cnceledcheckboxOrderstatus;
+    private TextArea replytoaFeedbackTextArea;
     @javafx.fxml.FXML
-    private TextField productidtextbox;
+    private TableColumn CustomerQueryColumnOfResponsetoQueryTableView;
     @javafx.fxml.FXML
-    private Label orderdetailslabel;
-    @javafx.fxml.FXML
-    private TextField deliveryaddtextbox;
-    @javafx.fxml.FXML
-    private TextField orderidtextbox;
+    private TableView CustomerFeedbackQuerytableview;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void gobacktodashboardonactionbutton(ActionEvent actionEvent) {
+    public void GoToDashboardOnactionButton(ActionEvent actionEvent) {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Seller/SellerDashboard.fxml"));
             Scene Nextscene = new Scene(fxmlLoader.load());
@@ -55,6 +50,6 @@ public class ManageCustomerOrderContoller
     }
 
     @javafx.fxml.FXML
-    public void addorderonactionbutton(ActionEvent actionEvent) {
+    public void replytofeedbackonactionbutton(ActionEvent actionEvent) {
     }
 }

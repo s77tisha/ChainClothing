@@ -8,6 +8,18 @@ module com.example.chainclothingproject {
 
     opens com.example.chainclothingproject.Seller to javafx.fxml;
     opens com.example.chainclothingproject.ReturnAgent to javafx.fxml;
+
+
+
+    exports com.example.chainclothingproject;
+    exports com.example.chainclothingproject.Seller;
+    exports com.example.chaincloth.ReturnAgent;
+
+}
+=======
+<<<<<<< HEAD
+    opens com.example.chainclothingproject.Seller to javafx.fxml;
+    opens com.example.chainclothingproject.ReturnAgent to javafx.fxml;
     opens com.example.chainclothingproject.Customer to javafx.fxml;
     opens com.example.chainclothingproject.DeliveryAgent to javafx.fxml;
 
@@ -27,3 +39,14 @@ module com.example.chainclothingproject {
 
 }
 
+<<<<<<< HEAD
+=======
+=======
+
+    exports com.example.chainclothingproject.WarehouseStaff;
+    exports com.example.chainclothingproject.InventoryManager;
+    //exports com.example.chainclothingproject.DeliveryAgent;
+}
+>>>>>>> 0f856be399ffc18f4d934bc71946e9e7c12b6585
+>>>>>>> d29ad5845ce2d0998461b0b2d0c9f87f272eadbf
+>>>>>>> 7b90c5899e29b940499a9f25e5b502e66d4d3b55

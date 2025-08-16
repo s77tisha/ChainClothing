@@ -10,12 +10,12 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Seller.CustomerFeedbackController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Seller.CustomerFeedbackAndReplyToQueryController">
    <top>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Label />
-            <Label text="🗣️ Customer Feedback" textFill="#3c2076">
+            <Label text="🗣️ View Customer Feedback &amp; Response to Query" textFill="#3c2076">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
@@ -27,29 +27,29 @@
       <AnchorPane prefHeight="250.0" prefWidth="600.0" BorderPane.alignment="CENTER">
 
            <children>
-               <TableView fx:id="CustomerFeedbacktableview" layoutY="6.0" prefHeight="316.0" prefWidth="600.0">
+               <TableView fx:id="CustomerFeedbackQuerytableview" layoutY="6.0" prefHeight="316.0" prefWidth="774.0">
                    <columns>
                        <TableColumn fx:id="productnamecolumnofCustomerFeedbacktableview" prefWidth="88.0" text="Product Name" />
                        <TableColumn fx:id="productIDcolumnofCustomerFeedbacktableview" prefWidth="69.60003662109375" text="Product ID" />
                        <TableColumn fx:id="CategotycolumnofCustomerFeedbacktableview1" prefWidth="84.0" text="Category" />
                   <TableColumn fx:id="CategotycolumnofCustomerFeedbacktableview11" prefWidth="95.20001220703125" text="Customer Name" />
-                  <TableColumn fx:id="CategotycolumnofCustomerFeedbacktableview111" prefWidth="103.99993896484375" text="Customer Rating" />
                   <TableColumn fx:id="CategotycolumnofCustomerFeedbacktableview12" prefWidth="165.60003662109375" text="Customer Feedback" />
+                  <TableColumn fx:id="CustomerQueryColumnOfResponsetoQueryTableView" prefWidth="268.7999633789062" text="Customer Query" />
                    </columns>
                </TableView>
            </children>
        </AnchorPane>
    </center>
    <bottom>
-      <AnchorPane prefHeight="142.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="125.0" prefWidth="588.0" BorderPane.alignment="CENTER">
          <children>
-            <TextArea fx:id="replytoaFeedbackTextArea" layoutY="-1.0" prefHeight="81.0" prefWidth="350.0" promptText="Reply to a feedback" />
+            <TextArea fx:id="replytoaFeedbackTextArea" layoutY="-1.0" prefHeight="81.0" prefWidth="350.0" promptText="Reply to a Query" />
             <Button layoutX="374.0" layoutY="27.0" mnemonicParsing="false" onAction="#replytofeedbackonactionbutton" style="-fx-background-color: cornflowerblue;" text="Reply" textFill="#fffdfd">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="246.0" layoutY="101.0" mnemonicParsing="false" onAction="#GoToDashboardOnactionButton" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: limegreen;" text="Go to Dashboard" textFill="#fafafa">
+            <Button layoutX="246.0" layoutY="101.0" mnemonicParsing="false" onAction="#GoToDashboardOnactionButton" prefHeight="27.0" prefWidth="297.0" style="-fx-background-color: limegreen;" text="Go to Dashboard" textFill="#fafafa">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>

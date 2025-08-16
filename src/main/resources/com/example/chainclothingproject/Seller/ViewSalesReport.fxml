@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -10,8 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Seller.ViewSalesReportController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Seller.ViewSalesReportController">
    <top>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -26,32 +26,43 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <TableView fx:id="Monthlysalestableview" layoutX="8.0" layoutY="98.0" prefHeight="200.0" prefWidth="334.0">
+            <TableView fx:id="SaleRecordTableView" layoutX="6.0" layoutY="137.0" prefHeight="200.0" prefWidth="204.0">
               <columns>
-                <TableColumn fx:id="monthtablecolumnofMonthlysalestableview" prefWidth="105.60000467300415" text="Months" />
-                <TableColumn fx:id="NoOfOrderstablecolumnofMonthlysalestableview" prefWidth="112.00000762939453" text="No. Of Orders" />
-                  <TableColumn fx:id="RevenuetablecolumnofMonthlysalestableview" prefWidth="112.00000762939453" text="Revenue" />
+                <TableColumn fx:id="OrderIDColumnOfSalerecordTable" prefWidth="71.99999809265137" text="Order ID" />
+                <TableColumn fx:id="OrderDateColumnOfSalerecordtableView" prefWidth="72.00000762939453" text="Order Date" />
+                  <TableColumn fx:id="subtotalColumnOfSalerecordTableView" prefWidth="59.20001220703125" text="Subtotal" />
               </columns>
             </TableView>
-            <Button layoutX="560.0" layoutY="488.0" mnemonicParsing="false" onAction="#gobacktodashboardonactionbuttonclick" text="🔙 Back to Dashboard" />
-            <DatePicker fx:id="Startdatedatepicker" layoutX="14.0" layoutY="1.0" promptText="Start Date" />
-            <DatePicker fx:id="enddatdatepicker" layoutX="14.0" layoutY="37.0" promptText="End Date" />
-            <Label layoutX="14.0" layoutY="73.0" text="Monthly Sales:" />
-            <TableView fx:id="topsellingproducttableview" layoutX="362.0" layoutY="98.0" prefHeight="200.0" prefWidth="343.0">
+            <Button layoutX="755.0" layoutY="479.0" mnemonicParsing="false" onAction="#gobacktodashboardonactionbuttonclick" text="🔙 Back to Dashboard" />
+            <DatePicker fx:id="Startdatedatepicker" layoutX="6.0" layoutY="50.0" promptText="Start Date" />
+            <DatePicker fx:id="enddatdatepicker" layoutX="187.0" layoutY="50.0" promptText="End Date" />
+            <Label layoutX="14.0" layoutY="73.0" />
+            <Button layoutX="6.0" layoutY="85.0" mnemonicParsing="false" onAction="#onactionFIlterbymonthbutton" prefHeight="26.0" prefWidth="107.0" text="Filter Date" />
+            <Button layoutX="375.0" layoutY="311.0" mnemonicParsing="false" onAction="#highestrevenueMonthonactionbuttonclick" prefHeight="26.0" prefWidth="160.0" text="Highest Revenue Month" />
+            <Label fx:id="ShowrevenueofAMonthLabel" layoutX="6.0" layoutY="341.0" prefHeight="48.0" prefWidth="205.0" style="-fx-background-color: floralwhite;" text="Revenue" />
+            <Label fx:id="ShowHighestRevenueMonthLabel" layoutX="377.0" layoutY="341.0" prefHeight="70.0" prefWidth="201.0" style="-fx-background-color: floralwhite;" text="Highest revenue Month" />
+            <Label layoutX="14.0" layoutY="119.0" text="Sale Record:" />
+            <Button layoutX="6.0" layoutY="11.0" mnemonicParsing="false" onAction="#loadsalerecordOnactionbutton" text="Load Sale Record" />
+            <TableView fx:id="RevenueTableView" layoutX="375.0" layoutY="50.0" prefHeight="200.0" prefWidth="198.0">
                <columns>
-                  <TableColumn fx:id="ProductnamecolumnofGoodsSoldtableview" prefWidth="105.60000467300415" text="Product Name" />
-                  <TableColumn fx:id="UnitsoldcolumnofGoodSoldtableview" prefWidth="112.00000762939453" text="Units Sold" />
-                  <TableColumn fx:id="RevenueGeneratedcolumnofGoodSoldtableview" prefWidth="124.0" text="Revenue Generated" />
+                  <TableColumn fx:id="MonthColumnRevenuetableView" prefWidth="102.39996337890625" text="Month" />
+                  <TableColumn fx:id="revenueColumnRevenueTableView" prefWidth="96.00006103515625" text="Revenue" />
                </columns>
             </TableView>
-            <Button layoutX="205.0" layoutY="24.0" mnemonicParsing="false" onAction="#onactionFIlterbymonthbutton" text="Filter by Month" />
-            <Label layoutX="362.0" layoutY="73.0" text="Goods Sold:" />
-            <Button layoutX="8.0" layoutY="332.0" mnemonicParsing="false" onAction="#highestrevenueMonthonactionbuttonclick" text="Highest Revenue Month" />
-            <Button layoutX="362.0" layoutY="306.0" mnemonicParsing="false" onAction="#Mostsoldproductonactionbuttonclick" text="Most sold Product" />
-            <Label layoutX="157.0" layoutY="300.0" prefHeight="86.0" prefWidth="187.0" style="-fx-background-color: floralwhite;" text="Label" />
-            <Label layoutX="488.0" layoutY="299.0" prefHeight="90.0" prefWidth="218.0" style="-fx-background-color: floralwhite;" text="Label" />
-            <Button layoutX="6.0" layoutY="445.0" mnemonicParsing="false" onAction="#calculateYearlyRevenueonactionbuttonclick" text="Calculate Yearly Revenue" />
-            <Label layoutX="157.0" layoutY="415.0" prefHeight="86.0" prefWidth="190.0" style="-fx-background-color: floralwhite;" text="Label" />
+            <Separator layoutX="370.0" layoutY="2.0" orientation="VERTICAL" prefHeight="511.0" prefWidth="6.0" />
+            <Button fx:id="loadEachMonthRevenueInTableView" layoutX="376.0" layoutY="274.0" mnemonicParsing="false" onAction="#ShowallREvenueOnActionButton" prefHeight="26.0" prefWidth="160.0" text="Show All Month's Revenue" />
+            <Label layoutX="374.0" layoutY="28.0" text="Revenue in Each Month:" />
+            <Separator layoutX="581.0" layoutY="8.0" orientation="VERTICAL" prefHeight="504.0" prefWidth="5.0" />
+            <TableView fx:id="TopSellingTableView" layoutX="587.0" layoutY="37.0" prefHeight="200.0" prefWidth="234.0">
+               <columns>
+                  <TableColumn fx:id="orderIDcolumnTopsellingTableview" prefWidth="71.99999809265137" text="Order ID" />
+                  <TableColumn fx:id="ProductNameColumnTopsellingTableview" prefWidth="94.4000244140625" text="Product Name" />
+                  <TableColumn fx:id="quantityColumnTopSellingTableView" prefWidth="65.5999755859375" text="Quantity" />
+               </columns>
+            </TableView>
+            <Label layoutX="587.0" layoutY="19.0" text="Top Selling:" />
+            <Button layoutX="587.0" layoutY="261.0" mnemonicParsing="false" onAction="#TopSellingProductOnactionButton" prefHeight="26.0" prefWidth="160.0" text="Show Top Selling Product" />
+            <Label fx:id="ShowTopSellingProduct" layoutX="594.0" layoutY="341.0" prefHeight="70.0" prefWidth="201.0" style="-fx-background-color: floralwhite;" text="Top Selling Product" />
          </children>
       </AnchorPane>
    </center>

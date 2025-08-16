@@ -11,6 +11,45 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
+<BorderPane fx:id="customerDashboardBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Customer.CustomerDashboardController">
+   <left>
+      <VBox prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#browseAndFilterOA" prefWidth="200.0" text="BrowseAndFilter" />
+            <Button mnemonicParsing="false" onAction="#viewProductAndReviewOA" prefWidth="200.0" text="ViewProductAndReview" />
+            <Button mnemonicParsing="false" onAction="#accountRegisterOA" prefWidth="200.0" text="AccountRegister" />
+            <Button mnemonicParsing="false" onAction="#addItemOA" prefWidth="200.0" text="AddItem" />
+            <Button mnemonicParsing="false" onAction="#placeOrderOA" prefWidth="200.0" text="PlaceOrder" />
+            <Button mnemonicParsing="false" onAction="#trackOrderOA" prefWidth="200.0" text="TrackOrder" />
+            <Button mnemonicParsing="false" onAction="#returnOrCancelltemOA" prefWidth="200.0" text="ReturnOrCancelltem" />
+            <Button mnemonicParsing="false" onAction="#pastPurchasesAndDownloadOA" prefWidth="200.0" text="PastPurchasesAndDownload" />
+            <Button mnemonicParsing="false" onAction="#signoutOA" prefWidth="200.0" text="Signout" />
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+=======
 <BorderPane fx:id="customerDashboardBoarderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Customer.CustomerDashboardController">
     <left>
         <VBox fx:id="customerVbox" prefHeight="651.0" prefWidth="200.0" style="-fx-background-color: #81b1b0;" BorderPane.alignment="CENTER">
@@ -95,6 +134,7 @@
             </menus>
         </MenuBar>
     </top>
+>>>>>>> d29ad5845ce2d0998461b0b2d0c9f87f272eadbf
    <center>
         <AnchorPane prefHeight="591.0" prefWidth="609.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
             <children>

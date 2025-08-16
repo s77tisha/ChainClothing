@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Seller.SetDiscountContoller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.Seller.SetDiscountContoller">
    <top>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -26,15 +26,19 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="productidTextfield" layoutX="54.0" layoutY="38.0" promptText="Product ID" />
-            <TextField fx:id="ProductnameTextfield" layoutX="54.0" layoutY="80.0" promptText="Product Name" />
-            <TextField fx:id="productpriceTextfield" layoutX="54.0" layoutY="124.0" promptText="Product Price" />
-            <DatePicker fx:id="DiscountsratdatePicker" layoutX="249.0" layoutY="38.0" promptText="Discount Starting Date" />
-            <DatePicker fx:id="DiscountEndDatePicker" layoutX="249.0" layoutY="80.0" promptText="Discount Ending Date" />
-            <ComboBox fx:id="HowMuchDiscountCombobox" layoutX="249.0" layoutY="124.0" prefHeight="26.0" prefWidth="177.0" promptText="How much Discount?" />
-            <Button layoutX="51.0" layoutY="201.0" mnemonicParsing="false" onAction="#setdiscountOnactonbutton" prefHeight="26.0" prefWidth="154.0" text="Set Discount" />
-            <Button layoutX="249.0" layoutY="202.0" mnemonicParsing="false" onAction="#UpdatepriceinProductListOnactionButton" prefHeight="26.0" prefWidth="179.0" text="Update Price" />
-            <Button layoutX="446.0" layoutY="260.0" mnemonicParsing="false" onAction="#gobacktodashboardonactionbutton" text="🔙 Back to Dashboard" />
+            <TextArea fx:id="ShowdiscountFormTextArea" layoutX="14.0" layoutY="191.0" prefHeight="261.0" prefWidth="490.0" style="-fx-background-color: Blue;" />
+            <Button layoutX="515.0" layoutY="145.0" mnemonicParsing="false" onAction="#setdiscountOnactonbutton" prefHeight="26.0" prefWidth="188.0" text="Set Discount" />
+            <Button layoutX="14.0" layoutY="464.0" mnemonicParsing="false" onAction="#gobacktodashboardonactionbutton" text="🔙 Back to Dashboard" />
+            <TableView layoutX="14.0" layoutY="14.0" prefHeight="158.0" prefWidth="485.0">
+              <columns>
+                <TableColumn prefWidth="99.99996757507324" text="Product Id" />
+                <TableColumn prefWidth="115.2000503540039" text="Product Name" />
+                  <TableColumn prefWidth="104.79998779296875" text="Price" />
+                  <TableColumn prefWidth="161.60000610351562" text="Discount Info" />
+              </columns>
+            </TableView>
+            <TextField layoutX="514.0" layoutY="107.0" prefHeight="26.0" prefWidth="190.0" promptText="Enter Product ID to Set Discount" />
+            <Button layoutX="515.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadproductlistonactionbutton" text="Load Products" />
          </children>
       </AnchorPane>
    </center>

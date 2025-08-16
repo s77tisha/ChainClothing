@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.chainclothingproject.ReturnAgent.InspectReturnedItemController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="ReturnAgent.InspectReturnedItemController">
+    <Label layoutX="20" layoutY="20" style="-fx-font-size: 18px;" text="Inspect Returned Item" />
+    <TableView fx:id="inspectionTable" layoutX="20" layoutY="60" prefHeight="400" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="productIDColumn" text="Product ID" />
+            <TableColumn fx:id="productNameColumn" prefWidth="111.20001983642578" text="Product Name" />
+            <TableColumn fx:id="conditionColumn" prefWidth="88.0" text="Condition" />
+            <TableColumn fx:id="notesColumn" prefWidth="122.39996337890625" text="Inspection Notes" />
+        </columns>
+    </TableView>
+    <Button layoutX="20" layoutY="480" onAction="#goBack" text="Back" />
 </AnchorPane>
