@@ -14,9 +14,9 @@ public class ReturnOrCancelltemController
     @javafx.fxml.FXML
     private TextField idTextfield;
     @javafx.fxml.FXML
-    private TableColumn <Class,String> statusTC;
+    private TableColumn <?,?> statusTC;
     @javafx.fxml.FXML
-    private TableColumn<Class,String> itemTC;
+    private TableColumn<?,String> itemTC;
     @javafx.fxml.FXML
     private ComboBox<String> reasonCombobox;
 

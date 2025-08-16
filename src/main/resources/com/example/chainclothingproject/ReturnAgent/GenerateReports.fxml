@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.chainclothingproject.ReturnAgent.GenerateReportsController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReturnAgent.GenerateReportsController">
 
+    <Label layoutX="20" layoutY="20" style="-fx-font-size: 18px;" text="Generate Reports" />
+
+    <Label layoutX="20" layoutY="70" text="Select Report Type:" />
+    <ChoiceBox fx:id="reportTypeChoice" layoutX="160" layoutY="65" prefWidth="200" />
+
+    <Button layoutX="380" layoutY="65" onAction="#generateReport" text="Generate" />
+
+    <TableView fx:id="reportTable" layoutX="20" layoutY="120" prefHeight="400" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="colReportID" text="Report ID" />
+            <TableColumn fx:id="colDate" text="Date" />
+            <TableColumn fx:id="colType" text="Type" />
+            <TableColumn fx:id="colDetails" text="Details" />
+        </columns>
+    </TableView>
+
+    <Button layoutX="20" layoutY="540" onAction="#goBack" text="Back" />
 </AnchorPane>
