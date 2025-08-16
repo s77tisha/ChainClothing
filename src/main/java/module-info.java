@@ -7,9 +7,9 @@ module com.example.chainclothingproject {
     opens com.example.chainclothingproject to javafx.fxml;
     opens com.example.chainclothingproject.WarehouseStaff to javafx.fxml;
     opens com.example.chainclothingproject.InventoryManager to javafx.fxml;
-//    opens com.example.chainclothingproject.Customer to javafx.fxml;
-    //opens com.example.chainclothingproject.DeliveryAgent to javafx.fxml;
-    //opens DeliveryAgent to javafx.fxml;
+    opens com.example.chainclothingproject.Customer to javafx.fxml;
+//    opens com.example.chainclothingproject.DeliveryAgent to javafx.fxml;
+
 
     exports com.example.chainclothingproject;
 

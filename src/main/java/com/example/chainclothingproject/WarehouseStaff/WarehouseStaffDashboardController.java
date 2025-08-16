@@ -23,7 +23,7 @@ public class WarehouseStaffDashboardController
     @javafx.fxml.FXML
     public void InventoryIssuesOnAction(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("InventoryIssues.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("WarehouseStaff/InventoryIssues.fxml"));
             WarehouseBorderPane.setCenter(fxmlLoader.load());
 
         }catch (Exception e){//}
@@ -32,7 +32,7 @@ public class WarehouseStaffDashboardController
     @javafx.fxml.FXML
     public void PendingPackagingOnAction(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("PendingPackaging.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("WarehouseStaff/PendingPackaging.fxml"));
             WarehouseBorderPane.setCenter(fxmlLoader.load());
 
         } catch (Exception e) {//
@@ -44,7 +44,7 @@ public class WarehouseStaffDashboardController
     @javafx.fxml.FXML
     public void PackingSlipsAndLabels(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("PendingPackaging.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("WarehouseStaff/PendingPackaging.fxml"));
             WarehouseBorderPane.setCenter(fxmlLoader.load());
 
         } catch (Exception e) {//
@@ -54,7 +54,7 @@ public class WarehouseStaffDashboardController
     @javafx.fxml.FXML
     public void RestockItemsOnAction(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("RestockItems.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("WarehouseStaff/RestockItems.fxml"));
             WarehouseBorderPane.setCenter(fxmlLoader.load());
 
         }catch (Exception e){//
@@ -73,7 +73,7 @@ public class WarehouseStaffDashboardController
     @javafx.fxml.FXML
     public void PackedAndDispatchOnAction(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("PackedAndDispatch.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("WarehouseStaff/PackedAndDispatch.fxml"));
             WarehouseBorderPane.setCenter(fxmlLoader.load());
 
         } catch (Exception e) {//
@@ -85,7 +85,7 @@ public class WarehouseStaffDashboardController
     @javafx.fxml.FXML
     public void InventoryViewOnAction(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("InventoryView.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("WarehouseStaff/InventoryView.fxml"));
             WarehouseBorderPane.setCenter(fxmlLoader.load());
 
         } catch (Exception e) {//
@@ -98,7 +98,7 @@ public class WarehouseStaffDashboardController
     public void DispatchScheduleOnAction(ActionEvent actionEvent) {
 
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("DispatchSchedule.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("WarehouseStaff/DispatchSchedule.fxml"));
             WarehouseBorderPane.setCenter(fxmlLoader.load());
 
         } catch (Exception e) {//
