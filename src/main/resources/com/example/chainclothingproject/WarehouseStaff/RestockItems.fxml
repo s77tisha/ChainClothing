@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.chainclothingproject.WarehouseStaff.RestockItemsController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="543.0" prefWidth="660.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.WarehouseStaff.RestockItemsController">
+   <children>
+      <TableView fx:id="RestockItemsTableView" layoutX="36.0" layoutY="40.0" prefHeight="200.0" prefWidth="297.0">
+        <columns>
+          <TableColumn fx:id="RestockItemsProductIDTableColumn" prefWidth="75.0" text="Product ID" />
+          <TableColumn fx:id="RestockItemsQuantityTableColumn" prefWidth="75.0" text="Quantity" />
+            <TableColumn fx:id="RestockItemsQualityTableColumn" prefWidth="75.0" text="Quality" />
+            <TableColumn fx:id="RestockItemsStatusTableColumn" prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="50.0" layoutY="299.0" text="Product ID" />
+      <TextField fx:id="RestockItemsProductIDTextField" layoutX="121.0" layoutY="295.0" />
+      <Button layoutX="72.0" layoutY="395.0" mnemonicParsing="false" onAction="#UpdateReturnedInventoryOnAction" prefHeight="25.0" prefWidth="231.0" text="Update Returned Inventory" />
+      <TableView fx:id="RestockItemsUpdatedReturnedProductTableView" layoutX="361.0" layoutY="240.0" prefHeight="200.0" prefWidth="240.0">
+        <columns>
+          <TableColumn fx:id="ReturnedProductTableColumn" minWidth="0.0" prefWidth="125.0" text=" Returned Product ID" />
+            <TableColumn fx:id="RestockItemsTotalReturnedTableColumn" prefWidth="114.0" text="Total Returned" />
+        </columns>
+      </TableView>
+      <Label layoutX="50.0" layoutY="340.0" text="Quantity" />
+      <TextField fx:id="RestockItemsQuantityTextField" layoutX="121.0" layoutY="336.0" />
+   </children>
 </AnchorPane>

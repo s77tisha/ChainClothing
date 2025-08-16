@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.chainclothingproject.WarehouseStaff.StockOverviewController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainclothingproject.WarehouseStaff.StockOverviewController">
+   <children>
+      <TableView fx:id="StockOverViewTableView" layoutX="112.0" layoutY="49.0" prefHeight="200.0" prefWidth="332.0">
+        <columns>
+          <TableColumn fx:id="StockOverViewProductIDTableColumn" prefWidth="100.0" text="Product ID" />
+          <TableColumn fx:id="StockBelowBeltTableColumn" prefWidth="119.0" text="Stock Below Belt" />
+            <TableColumn fx:id="EnoughStockTableColumn" prefWidth="112.0" text="Enough Stock" />
+        </columns>
+      </TableView>
+      <Label layoutX="75.0" layoutY="279.0" text="Product ID" />
+      <TextField fx:id="StockOverViewProductIDTextFieldFxid" layoutX="151.0" layoutY="275.0" />
+      <Button layoutX="159.0" layoutY="334.0" mnemonicParsing="false" onAction="#UpdateStockOverViewOnAction" prefHeight="25.0" prefWidth="238.0" text="Update Stock" />
+   </children>
 </AnchorPane>
